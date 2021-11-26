@@ -11,7 +11,7 @@ make run
 
 `Note`: This step may take some time. Please be patient
 
-* Open `http://localhost:8000` in a web browser and complete the installation by Wordpress UI
+* Open `http://localhost:8000` in a web browser and complete the installation by WordPress UI
 
 * Enjoy
 
