@@ -1,5 +1,5 @@
 # docker-wordpress
-Easy way to run WordPress in an isolated enviroment
+Easy way to run WordPress in an isolated environment
 
 ## Usage
 
