@@ -31,4 +31,4 @@ make cleanup
 - Docker compose
 
 ## Credits
-This little project was inspired by https://docs.docker.com/samples/wordpress/
+This little repository was inspired by https://docs.docker.com/samples/wordpress/
