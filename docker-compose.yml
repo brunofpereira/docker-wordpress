@@ -19,7 +19,7 @@ services:
     volumes:
       - wordpress_data:/var/www/html
     ports:
-      - "${WORDPRESS_PORT}"
+      - "${WORDPRESS_PORTS}"
     restart: always
     environment:
       WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
