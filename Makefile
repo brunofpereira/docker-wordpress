@@ -1,8 +1,10 @@
+ENV_FILE ?= ./config/.env.example
+
 run:
-	@docker-compose --env-file ./config/.env.example up -d
+	@docker-compose --env-file ${ENV_FILE} up -d
 
 shutdown:
-	@docker-compose --env-file ./config/.env.example down
+	@docker-compose --env-file ${ENV_FILE} down
 
 cleanup:
-	@docker compose --env-file ./config/.env.example down --volumes
+	@docker compose --env-file ${ENV_FILE} down --volumes
