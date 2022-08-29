@@ -1,5 +1,8 @@
 run:
 	@docker-compose --env-file ./config/.env.example up -d
 
-stop:
+shutdown:
 	@docker-compose --env-file ./config/.env.example down
+
+cleanup:
+	@docker compose --env-file ./config/.env.example down --volumes

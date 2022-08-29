@@ -15,10 +15,16 @@ make run
 
 * Enjoy
 
-### Stopping
-- Just execute the following command:
+### Shutdown
+- Just execute the following command (removes the containers and default network, but preserves your WordPress database):
 ```bash
-make stop
+make shutdown
+```
+
+### Cleanup
+- Just execute the following command (removes the containers, default network, and the WordPress database):
+```bash
+make cleanup
 ```
 
 ## Stack
