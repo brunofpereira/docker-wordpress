@@ -7,11 +7,11 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: BZn6G6VwQQLvT2Ct
-      MYSQL_DATABASE: db_wordpress
-      MYSQL_USER: user_wordpress
-      MYSQL_PASSWORD: L3G7YWBZZu9aJaKW
-    
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+
   wordpress:
     depends_on:
       - db
@@ -19,13 +19,13 @@ services:
     volumes:
       - wordpress_data:/var/www/html
     ports:
-      - "8000:80"
+      - "${WORDPRESS_PORT}"
     restart: always
     environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: user_wordpress
-      WORDPRESS_DB_PASSWORD: L3G7YWBZZu9aJaKW
-      WORDPRESS_DB_NAME:  db_wordpress
+      WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
+      WORDPRESS_DB_USER: "${WORDPRESS_DB_USER}"
+      WORDPRESS_DB_PASSWORD: "${WORDPRESS_DB_PASSWORD}"
+      WORDPRESS_DB_NAME:  "${WORDPRESS_DB_NAME}"
 volumes:
   db_data: {}
   wordpress_data: {}

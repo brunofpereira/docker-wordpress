@@ -1,5 +1,5 @@
 run:
-	@docker-compose up -d
+	@docker-compose --env-file ./config/.env.example up -d
 
 stop:
-	@docker-compose down
+	@docker-compose --env-file ./config/.env.example down
