@@ -3,7 +3,7 @@ Easy way to run WordPress in an isolated environment
 
 ## Usage
 
-### Running
+### Run
 * Just execute the following command:
 ```bash
 make run
